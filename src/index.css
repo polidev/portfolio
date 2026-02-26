@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-beige: #f8f3e1;
+  --color-sand: #e3dbbb;
+  --color-olive: #aeb784;
+  --color-avocado: #41431b;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  background-color: #f8f3e1;
+}
