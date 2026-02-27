@@ -4,6 +4,7 @@ import "./App.css";
 
 const Header = lazy(() => import("./components/complex/header/header.jsx"));
 const Home = lazy(() => import("./pages/home.jsx"));
+const Footer = lazy(() => import("./components/complex/footer/footer.jsx"));
 const FourCeroFour = lazy(() => import("./pages/fourCeroFour.jsx"));
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="*" element={<FourCeroFour />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }

@@ -5,8 +5,8 @@ import "/src/pages/home.css";
 function Home() {
   return (
     <>
-      <div className="col-start-2 col-end-15 row-span-11 flex justify-between">
-        <section className="flex flex-col w-[50%] justify-around">
+      <article className="col-start-2 col-end-15 row-span-11 flex justify-between">
+        <section className="flex flex-col w-[50%] justify-around border-b-2">
           <h4 className="w-fit p-2 text-2xl text-abocado font-bold bg-olive">
             Hi! I'm Jesus Politron
           </h4>
@@ -26,8 +26,14 @@ function Home() {
             <BaseButton text="Download CV" />
           </span>
         </section>
-        <section>photo</section>
-      </div>
+        <section className="flex w-[50%] justify-center items-center border-b-2">
+          <img
+            src="/public/profilePicture.svg"
+            alt="developer"
+            className="w-xl aspect-square"
+          />
+        </section>
+      </article>
     </>
   );
 }
