@@ -7,7 +7,7 @@ function HeaderNavBar() {
   return (
     <>
       <nav className="flex">
-        <ul className="text-xl flex items-end gap-0.5">
+        <ul className="flex text-xl items-end gap-0.5">
           {listOfLinks.map((item) => (
             <BaseNavBarItem key={item} listOfItems={item} />
           ))}

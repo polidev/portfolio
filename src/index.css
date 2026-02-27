@@ -2,9 +2,13 @@
 
 @theme {
   --color-beige: #f8f3e1;
+  --color-beige50: #f8f3e150;
   --color-sand: #e3dbbb;
+  --color-sand50: #e3dbbb50;
   --color-olive: #aeb784;
+  --color-olive50: #aeb78450;
   --color-avocado: #41431b;
+  --color-avocado50: #41431b50;
 }
 
 #root {

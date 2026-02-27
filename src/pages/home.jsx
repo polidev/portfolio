@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+import BaseButton from "../components/base/baseButton/baseButton";
 import "/src/pages/home.css";
 
 function Home() {
@@ -14,6 +16,15 @@ function Home() {
             visually appealing web applications. Build dynamic and interactive
             interfaces that enhance user experience.
           </p>
+          <span className="flex gap-4">
+            <Link
+              to="https://www.linkedin.com/in/jesus-politron/"
+              target="_blank"
+            >
+              <BaseButton text="LinkedIn" />
+            </Link>
+            <BaseButton text="Download CV" />
+          </span>
         </section>
         <section>photo</section>
       </div>
