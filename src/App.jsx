@@ -1,19 +1,22 @@
-import { Lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-const Home = Lazy(() => import("./pages/home"));
-
+const Header = lazy(() => import("./components/complex/header/header.jsx"));
+const Home = lazy(() => import("./pages/home.jsx"));
+const Footer = lazy(() => import("./components/complex/footer/footer.jsx"));
+const FourCeroFour = lazy(() => import("./pages/fourCeroFour.jsx"));
 function App() {
   return (
     <>
+      <Header />
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
-          <main>
-            <Route path="/" element={<Home />} />
-          </main>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<FourCeroFour />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }
