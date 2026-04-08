@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .footer {
+    @apply bg-amber-200;
+  }
+}
