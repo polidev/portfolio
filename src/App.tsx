@@ -4,6 +4,7 @@ import "./App.css";
 
 const Header = lazy(() => import("./components/layout/header/header.tsx"));
 const Home = lazy(() => import("./pages/home.tsx"));
+const Footer = lazy(() => import("./components/layout/footer/footer.tsx"));
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </Suspense>
+
+      <Footer />
     </>
   );
 }

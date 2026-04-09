@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components {
+  .header {
+    @apply w-screen p-4 flex justify-center items-center;
+  }
+
+  .header-nav {
+    @apply w-full px-8 flex justify-between items-center;
+  }
+
+  .header-nav-list {
+    @apply flex gap-8 items-center text-gray-600;
+  }
+
+  .header-download-button {
+    @apply px-8 py-2 rounded-lg bg-black text-white;
+  }
+}
