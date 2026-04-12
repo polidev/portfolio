@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer components {
+  .project-card {
+    @apply mb-4 flex flex-col justify-around transition-transform transform hover:scale-105;
+  }
+  .project-card_header {
+    & img {
+      @apply w-full h-36 object-cover rounded-lg mb-4 bg-gray-200;
+    }
+
+    & h3 {
+      @apply text-2xl font-semibold text-gray-900;
+    }
+  }
+
+  .project-card_description {
+    @apply text-gray-700 mb-4;
+  }
+
+  .project-card_footer {
+    @apply flex gap-2 text-sm text-gray-500;
+
+    & span {
+      @apply border border-gray-200 px-2 py-1;
+    }
+  }
+}

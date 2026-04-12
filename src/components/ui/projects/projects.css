@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components {
+  .projects-section {
+    @apply w-full flex justify-center mb-8;
+
+    & h2 {
+      @apply text-6xl font-bold mb-4;
+    }
+  }
+
+  hr {
+    @apply w-1/2 m-auto mb-8 border border-gray-200;
+  }
+
+  .projects-container {
+    @apply w-full mb-8 px-20 grid gap-12 grid-cols-2;
+  }
+}
