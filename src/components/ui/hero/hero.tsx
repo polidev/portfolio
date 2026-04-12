@@ -26,7 +26,7 @@ export default function Hero() {
 
         <div className="hero-picture">
           <img src={profilePicture} alt="" />
-          <p>Social media list component</p>
+          <p>GitHub / LinkedIn</p>
         </div>
       </section>
     </>
