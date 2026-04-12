@@ -1,0 +1,79 @@
+[
+  {
+    "id": "9464d530-c36d-45da-bb6d-e6bba9c58611",
+    "titulo": "Lista de tareas (To-Do App)",
+    "descripcion": "CRUD completo en el navegador: agregar, completar y eliminar tareas. Persistencia con localStorage.",
+    "nivel": "Principiante",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "DOM"]
+  },
+  {
+    "id": "8ec6f078-934c-4630-a491-8cf533812047",
+    "titulo": "Calculadora de IMC o conversor de unidades",
+    "descripcion": "Formulario con validación, cálculo en tiempo real y feedback visual al usuario.",
+    "nivel": "Principiante",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "Eventos"]
+  },
+  {
+    "id": "097149cb-3616-4c85-8556-0ab377f8017a",
+    "titulo": "App del clima",
+    "descripcion": "Búsqueda de ciudad y muestra temperatura, humedad e icono del tiempo consumiendo la API de OpenWeatherMap.",
+    "nivel": "Básico-Intermedio",
+    "tecnologias": ["React", "fetch / Async", "useEffect", "CSS Modules"]
+  },
+  {
+    "id": "6a3c9af3-848e-4c58-a080-c3228090a6b1",
+    "titulo": "Buscador de películas o series",
+    "descripcion": "Búsqueda con debounce, tarjetas de resultados y página de detalle con React Router. Usa la API de OMDB o TMDB.",
+    "nivel": "Básico-Intermedio",
+    "tecnologias": ["React", "React Router", "useRef", "Custom Hooks"]
+  },
+  {
+    "id": "1a60f2af-355c-4d57-9a62-a848786caa0d",
+    "titulo": "Carrito de compras",
+    "descripcion": "Listado de productos, agregar/quitar del carrito, contador y total. Gestión de estado global con Zustand o Context.",
+    "nivel": "Básico-Intermedio",
+    "tecnologias": ["React", "Zustand", "Context API", "TypeScript"]
+  },
+  {
+    "id": "60183633-3677-43f7-85ba-5f6a29bd4a68",
+    "titulo": "API REST con Node.js + Express",
+    "descripcion": "Backend con CRUD completo, paginación, filtros por query params, validación con Zod y despliegue en Vercel.",
+    "nivel": "Intermedio",
+    "tecnologias": ["Node.js", "Express", "Zod", "MVC", "CORS"]
+  },
+  {
+    "id": "e7be4439-a527-44f9-bbd7-169ff874cd23",
+    "titulo": "App de notas con autenticación",
+    "descripcion": "Registro e inicio de sesión (JWT), rutas protegidas, CRUD de notas por usuario. Frontend en React + backend en Express.",
+    "nivel": "Intermedio",
+    "tecnologias": ["React", "Node.js", "JWT", "Rutas protegidas", "TypeScript"]
+  },
+  {
+    "id": "24f5864c-a2e9-4b39-943c-7d0b8e51afc2",
+    "titulo": "Dashboard con métricas y gráficos",
+    "descripcion": "Panel de administración con tablas, filtros y visualización de datos. Tests E2E con Playwright.",
+    "nivel": "Intermedio",
+    "tecnologias": ["React", "TypeScript", "Recharts", "Playwright"]
+  },
+  {
+    "id": "c54d7f4b-638d-4d4b-99d3-848c7b938a66",
+    "titulo": "Plataforma de empleos full stack",
+    "descripcion": "Réplica mejorada del proyecto del bootcamp: búsqueda, filtros, favoritos, autenticación y backend propio con base de datos SQL.",
+    "nivel": "Avanzado",
+    "tecnologias": ["React", "Node.js", "SQL", "Zustand", "TypeScript"]
+  },
+  {
+    "id": "5aa56079-a7b7-4a7d-a929-6181be09acfc",
+    "titulo": "Chatbot con IA y streaming",
+    "descripcion": "Interfaz de chat que consume la API de OpenAI con respuestas en streaming, historial de conversación y rate limiting en el backend.",
+    "nivel": "Avanzado",
+    "tecnologias": ["React", "Node.js", "OpenAI API", "Streaming", "Monorepo"]
+  },
+  {
+    "id": "5d9f5bfb-f045-4b79-8907-d7dff3defbe8",
+    "titulo": "E-commerce con IA integrada",
+    "descripcion": "Tienda con catálogo, carrito, checkout, panel de admin y asistente de IA para recomendaciones de productos. CI/CD con GitHub Actions y Docker.",
+    "nivel": "Full Stack complejo",
+    "tecnologias": ["React", "Node.js", "SQL", "OpenAI", "Docker", "CI/CD"]
+  }
+]
