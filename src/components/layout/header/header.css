@@ -2,11 +2,11 @@
 
 @layer components {
   .header {
-    @apply w-screen p-4 flex justify-center items-center;
+    @apply w-screen mb-8 py-4 flex justify-center items-center;
   }
 
   .header-nav {
-    @apply w-full px-8 flex justify-between items-center;
+    @apply w-full px-16 flex justify-between items-center;
   }
 
   .header-nav-list {

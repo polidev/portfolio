@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .tech-stack {
+    @apply flex gap-4;
+  }
+}
