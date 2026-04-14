@@ -2,18 +2,27 @@
 
 @layer components {
   .header {
-    @apply w-screen mb-8 py-4 flex justify-center items-center;
+    @apply w-screen py-4 flex justify-center items-center text-gray-600 sticky top-0 z-10 bg-white;
   }
 
   .header-nav {
-    @apply w-full px-16 flex justify-between items-center;
+    @apply w-full px-8 flex justify-between items-center;
+
+    & > a:first-child {
+      @apply transition duration-200 hover:text-black hover:scale-120 hover:border-b hover:border-black active:scale-100;
+    }
   }
 
   .header-nav-list {
-    @apply flex gap-8 items-center text-gray-600;
+    @apply flex gap-8 items-center;
+
+    & > li {
+      @apply transition duration-200 hover:text-black hover:scale-120 active:scale-100 hover:border-b hover:border-black;
+    }
   }
 
   .header-download-button {
-    @apply px-8 py-2 rounded-lg bg-black text-white;
+    @apply px-8 py-2 rounded-lg bg-gray-600 text-white cursor-pointer;
+    @apply transition duration-200 hover:scale-120 active:scale-110;
   }
 }
