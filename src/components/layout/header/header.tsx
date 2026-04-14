@@ -17,7 +17,12 @@ export default function Header() {
           <li>
             <Link to="/">Contact</Link>
           </li>
-          <button className="header-download-button">Download CV</button>
+          <Link
+            to="https://drive.google.com/file/d/15D4tqXmzu2DRlGrs-E0IC8VYBpWrwltY/view?usp=drive_link"
+            target="_blank"
+          >
+            <button className="header-download-button">Download CV</button>
+          </Link>
         </ul>
       </nav>
     </header>
