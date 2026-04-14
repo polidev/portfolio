@@ -23,6 +23,6 @@
 
   .header-download-button {
     @apply px-8 py-2 rounded-lg bg-gray-600 text-white cursor-pointer;
-    @apply transition duration-200 hover:scale-120 hover:bg-black active:scale-110;
+    @apply transition duration-200 hover:scale-120 active:scale-110;
   }
 }
