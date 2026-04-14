@@ -14,6 +14,6 @@
   }
 
   .projects-container {
-    @apply w-full mb-8 px-20 grid gap-12 grid-cols-2;
+    @apply w-full mb-8 px-20 grid gap-12 grid-cols-3;
   }
 }

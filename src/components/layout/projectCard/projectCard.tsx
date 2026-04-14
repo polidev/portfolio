@@ -16,9 +16,13 @@ export default function ProjectCard({
   return (
     <article className="project-card">
       <header className="project-card_header">
-        <img src="" alt="" />
-        <h3>{title}</h3>
-        <span>{level}</span>
+        <img
+          src="https://i.pinimg.com/736x/c0/58/04/c05804e3505d145ba9bec0cc239fa3af.jpg"
+          alt=""
+        />
+        <h3>
+          {title} <span>{level}</span>
+        </h3>
       </header>
 
       <p className="project-card_description">{description}</p>
