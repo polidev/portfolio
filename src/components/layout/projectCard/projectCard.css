@@ -2,15 +2,19 @@
 
 @layer components {
   .project-card {
-    @apply mb-4 flex flex-col justify-around transition-transform transform hover:scale-105;
+    @apply mb-4 flex flex-col justify-between transition-transform transform hover:scale-110 cursor-pointer;
   }
   .project-card_header {
     & img {
-      @apply w-full h-36 object-cover rounded-lg mb-4 bg-gray-200;
+      @apply w-full h-36 object-cover rounded-lg bg-gray-200;
     }
 
     & h3 {
-      @apply text-2xl font-semibold text-gray-900;
+      @apply text-2xl font-semibold text-gray-900 flex justify-between items-center;
+    }
+
+    & span {
+      @apply text-sm text-gray-500;
     }
   }
 

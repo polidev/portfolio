@@ -1,17 +1,9 @@
-import { useHttp } from "../../../hooks/useHttp";
-import ProjectCard from "../../layout/projectCard/projectCard";
+import { useHttp } from "../../../hooks/useHttp.tsx";
+import ProjectCard from "../../layout/projectCard/projectCard.tsx";
 import "./projects.css";
 
-interface Project {
-  id: string;
-  titulo: string;
-  descripcion: string;
-  nivel: string;
-  tecnologias: string[];
-}
-
 export default function Projects() {
-  const { data, loading, error } = useHttp<Project[]>("/src/data/data.json");
+  const { data, loading, error } = useHttp("src/data/data.json");
 
   console.log(data);
 
@@ -22,7 +14,9 @@ export default function Projects() {
       </div>
       <hr />
       <section className="projects-container">
+        {/* Replace with a custom loading component */}
         {loading && <p>Loading...</p>}
+        {/* Replace with a custom error component */}
         {error && <p>Error: {error}</p>}
         {data?.map((project) => (
           <ProjectCard
