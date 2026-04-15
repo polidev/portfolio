@@ -1,7 +1,12 @@
 @import "tailwindcss";
+@import "tailwind-animations";
 
 @layer components {
   .tech-stack {
-    @apply flex gap-4;
+    @apply w-full flex gap-2 justify-between items-center;
+
+    & li {
+      @apply transition duration-200 ease-in-out hover:scale-120 hover:translate-y-2 animate-fade-in-up;
+    }
   }
 }

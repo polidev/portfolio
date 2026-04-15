@@ -9,7 +9,7 @@
     @apply w-full px-8 flex justify-between items-center;
 
     & > a:first-child {
-      @apply transition duration-200 hover:text-black hover:scale-120 hover:border-b hover:border-black active:scale-100;
+      @apply transition duration-200 ease-in-out hover:text-black hover:scale-120 hover:border-b hover:border-black active:scale-100;
     }
   }
 
@@ -17,12 +17,12 @@
     @apply flex gap-8 items-center;
 
     & > li {
-      @apply transition duration-200 hover:text-black hover:scale-120 active:scale-100 hover:border-b hover:border-black;
+      @apply transition duration-200 ease-in-out hover:text-black hover:scale-120 active:scale-100 hover:border-b hover:border-black;
     }
   }
 
   .header-download-button {
     @apply px-8 py-2 rounded-lg bg-gray-600 text-white cursor-pointer;
-    @apply transition duration-200 hover:scale-120 active:scale-110;
+    @apply transition duration-200 ease-in-out hover:scale-120 active:scale-110;
   }
 }
