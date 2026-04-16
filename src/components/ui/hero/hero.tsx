@@ -7,7 +7,7 @@ import profilePicture from "../../../assets/profile.svg";
 export default function Hero() {
   return (
     <>
-      <section className="hero">
+      <section id="home" className="hero">
         <aside className="hero-description">
           <h1>Hi, I'm Jesús Politrón</h1>
           <h2>Freelance Frontend Developer</h2>

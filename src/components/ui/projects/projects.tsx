@@ -9,24 +9,26 @@ export default function Projects() {
 
   return (
     <>
-      <div id="projects-section" className="projects-section">
-        <h2>Projects</h2>
-      </div>
-      <hr />
-      <section className="projects-container">
-        {/* Replace with a custom loading component */}
-        {loading && <p>Loading...</p>}
-        {/* Replace with a custom error component */}
-        {error && <p>Error: {error}</p>}
-        {data?.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.titulo}
-            description={project.descripcion}
-            level={project.nivel}
-            technologies={project.tecnologias}
-          />
-        ))}
+      <section id="projects" className="projects-section">
+        <header>
+          <h2>Projects</h2>
+        </header>
+
+        <div className="projects-container">
+          {/* Replace with a custom loading component */}
+          {loading && <p>Loading...</p>}
+          {/* Replace with a custom error component */}
+          {error && <p>Error: {error}</p>}
+          {data?.map((project) => (
+            <ProjectCard
+              key={project.id}
+              title={project.titulo}
+              description={project.descripcion}
+              level={project.nivel}
+              technologies={project.tecnologias}
+            />
+          ))}
+        </div>
       </section>
     </>
   );
