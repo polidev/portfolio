@@ -10,15 +10,22 @@ export default function Header() {
 
         <ul className="header-nav-list">
           <li>
-            <HashLink to="/#home">Home</HashLink>
+            <HashLink smooth to="/#home">
+              Home
+            </HashLink>
           </li>
           <li>
-            <HashLink to="/#projects">Projects</HashLink>
+            <HashLink smooth to="/#projects">
+              Projects
+            </HashLink>
           </li>
           <li>
-            <HashLink to="/#contact">Contact</HashLink>
+            <HashLink smooth to="/#contact">
+              Contact
+            </HashLink>
           </li>
           <HashLink
+            smooth
             to="https://drive.google.com/file/d/15D4tqXmzu2DRlGrs-E0IC8VYBpWrwltY/view?usp=drive_link"
             target="_blank"
           >
