@@ -1,15 +1,15 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./contact.css";
 
 export default function Contact() {
   const [messageLength, setMessageLength] = useState(0);
 
-  const handleMessageLength = (e) => {
+  const handleMessageLength = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessageLength(e.target.value.length);
     console.log(messageLength);
   };
 
-  const handleMessageSend = (e) => {
+  const handleMessageSend = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     if (messageLength > 149) {
