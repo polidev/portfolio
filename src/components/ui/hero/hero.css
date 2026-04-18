@@ -3,25 +3,33 @@
 @layer components {
   .hero {
     @apply w-full mb-8 flex justify-around items-stretch;
+    @apply max-sm:flex-col max-sm:items-center;
   }
 
   .hero-description {
     @apply w-2/5 h-auto my-auto flex flex-col text-wrap;
+    @apply max-sm:w-full max-sm:px-2 max-sm:mb-8;
 
     & h1 {
       @apply mr-auto px-2 py-1 text-4xl font-semibold bg-amber-200;
+      @apply max-md:text-3xl;
+      @apply max-sm:text-2xl;
     }
 
     & h2 {
       @apply mb-4 text-8xl font-bold;
+      @apply max-md:text-6xl;
+      @apply max-sm:text-4xl;
     }
 
     & p {
       @apply mb-4 text-lg;
+      @apply max-sm:hidden;
     }
 
     & h3 {
       @apply mr-auto mb-4 px-2 py-1 text-2xl bg-amber-200;
+      @apply max-sm:text-lg;
     }
   }
 
@@ -30,6 +38,7 @@
 
     & img {
       @apply w-3/5 mb-4 p-4 aspect-square rounded-full object-cover bg-amber-200;
+      @apply max-sm:hidden;
     }
 
     & span {

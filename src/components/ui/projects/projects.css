@@ -2,18 +2,21 @@
 
 @layer components {
   .projects-section {
-    @apply w-screen mb-8 flex flex-col justify-center items-center;
+    @apply w-full mb-8 flex flex-col justify-center items-center;
 
-    & header {
+    & > header:first-child {
       @apply mb-8;
+      @apply max-sm:mb-4;
     }
 
     & h2 {
       @apply text-6xl font-semibold;
+      @apply max-sm:text-2xl;
     }
   }
 
   .projects-container {
     @apply w-4/5 grid grid-cols-2 gap-8;
+    @apply max-sm:w-full max-sm:px-2 max-sm:grid-cols-1;
   }
 }

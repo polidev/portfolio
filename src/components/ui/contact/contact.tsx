@@ -1,6 +1,24 @@
+import React, { useState } from "react";
 import "./contact.css";
 
 export default function Contact() {
+  const [messageLength, setMessageLength] = useState(0);
+
+  const handleMessageLength = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessageLength(e.target.value.length);
+    console.log(messageLength);
+  };
+
+  const handleMessageSend = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    if (messageLength > 149) {
+      console.log("Sorry, your message is too long.");
+    }
+
+    console.log("Message sent.");
+  };
+
   return (
     <>
       <section id="contact" className="contact-section">
@@ -16,9 +34,15 @@ export default function Contact() {
           <form action="">
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Message" required></textarea>
+            <textarea
+              onChange={handleMessageLength}
+              placeholder="Message"
+              required
+            ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button disabled type="submit" onClick={handleMessageSend}>
+              Send Message
+            </button>
           </form>
         </aside>
       </section>
