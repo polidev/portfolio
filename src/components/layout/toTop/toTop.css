@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tailwind-animations";
+
+@layer components {
+  .toTop {
+    @apply h-12 w-12 bottom-4 right-4 fixed flex justify-center items-center rounded-full bg-gray-200 cursor-pointer text-xl text-gray-600;
+    @apply transition duration-200 ease-in-out hover:bg-gray-900 hover:text-white active:bg-gray-200 active:text-gray-600 hover:scale-120 active:scale-100;
+    @apply animate-fade-in-up;
+  }
+}
