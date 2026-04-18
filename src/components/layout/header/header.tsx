@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
 import "./header.css";
 
 export default function Header() {
@@ -9,20 +10,20 @@ export default function Header() {
 
         <ul className="header-nav-list">
           <li>
-            <Link to="/">Home</Link>
+            <HashLink to="/#home">Home</HashLink>
           </li>
           <li>
-            <Link to="/">Projects</Link>
+            <HashLink to="/#projects">Projects</HashLink>
           </li>
           <li>
-            <Link to="/">Contact</Link>
+            <HashLink to="/#contact">Contact</HashLink>
           </li>
-          <Link
+          <HashLink
             to="https://drive.google.com/file/d/15D4tqXmzu2DRlGrs-E0IC8VYBpWrwltY/view?usp=drive_link"
             target="_blank"
           >
             <button className="header-download-button">Download CV</button>
-          </Link>
+          </HashLink>
         </ul>
       </nav>
     </header>
